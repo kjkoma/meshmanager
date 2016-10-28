@@ -1,0 +1,151 @@
+@charset "utf-8";
+/*! layout.css v0.0.1 | MIT License | Japan Computer Services, Inc. */
+
+/**
+ * layout.css
+ *   description
+ *     全ページ共通のスタイルを定義するスタイルシート
+ */
+
+/**
+ * Tag definition
+ *
+ */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  /* font-family: Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif; */
+  font-family: "メイリオ", "Meiryo", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+
+  /* this style is for bootstrap fixed to top */
+  padding-top: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  margin-right: 4px;
+}
+
+button:focus, button:active {
+  outline: none;
+  border: none;
+}
+
+a:active, a:focus, a:visited {
+  outline: none;
+}
+
+/**
+ * Id definition
+ *
+ */
+#header {
+  font-weight: 600;
+  background-color: #7ADABF;
+  padding-right: 20px;
+}
+
+#wrapper {
+  min-height: 100%;
+  height    : auto;
+  margin    : 0 auto -60px;
+  padding   : 0 0 60px;
+}
+
+#footer {
+  padding: 10px 0;
+}
+
+/**
+ * Class definition
+ *
+ */
+.logo-title {
+  color: #FFFFFF;
+}
+
+/**
+ *  Override Bootstrop styles
+ *
+ */
+.dropdown > a {
+  color: #333333;
+  font-size: 16px;
+}
+.dropdown > a:hover, .dropdown > a:focus {
+  text-decoration: none;
+  color: #999999;
+}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+  background-image: none;
+  background-color: #5bc0de;
+  color: #ffffff;
+}
+
+/**
+ *  Add Bootstrop styles
+ *
+ */
+/* bs-callout style */
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}

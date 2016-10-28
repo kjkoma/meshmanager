@@ -1,0 +1,97 @@
+@charset "utf-8";
+/*! app.css v0.0.1 | MIT License | Japan Computer Services, Inc. */
+
+/**
+ * app.css
+ *   description
+ *     アプリケーション専用のスタイルを定義するスタイルシート
+ */
+
+body {
+  /* 画像ファイルの指定 */
+  background-image: url(/img/background.png);
+   
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+   
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+   
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+   
+  /* 背景画像が読み込まれる前に表示される背景のカラー */
+  background-color: #464646;
+}
+
+/**
+ * Common Definition
+ *
+ */
+.color-white {
+  color: #FFFFFF;
+}
+.color-red {
+  color: #FF4E4E;
+}
+
+@media (min-width: 992px) {
+  .desktop {
+    display: inline-block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    /* this style is for bootstrap fixed to top */
+    padding-top: 180px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+}
+
+/**
+ * Function: Authentication
+ * Page: login.ctp
+ *
+ */
+.login-logo-text {
+  font-family: 'Tekton Pro', 'cursive', 'Arial';
+  color: #688DF2;
+  font-size: 32pt;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.login-form {
+  margin-top: 40px;
+}
+.login-img {
+  margin-top: 60px;
+}
+.message {
+  margin-top: 40px;
+}
+.message p {
+  margin-bottom: 20px;
+}
+
+
+/**
+ * Function: Products
+ * Page: index.ctp
+ *
+ */
+.products_name {
+  color: #4233A1;
+  font-weight: 600;
+}
+
